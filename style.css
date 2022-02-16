@@ -1,8 +1,11 @@
 .container {
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
-  
-body, html {
+
+ body, html {
     height: 100%;
 }
 
@@ -48,6 +51,15 @@ header {
   position: static;
   border-radius: 50%;
 }
+#recipe {
+  /* text-align: right; */
+  color: white;
+  width: 110%;
+  margin-right: 50px;
+  float: left;
+
+ 
+}
 .fiery-head {
   display: block;
     margin-left: auto;
@@ -66,25 +78,49 @@ header {
     cursor: pointer;
   }
   
-#meal-detail{
-      position:relative;
+#meal-details{
+      /* position:relative; */
+     
   }
+#align-horizontally {
+  display: flex;
+}
 
 img#selectedPic {
     display: block;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
-    height: 400px;
+    width: 15%;
+    height: auto;
     border: solid;
     border-color: white;
     box-shadow:  0 0 0px #fff, 0 0 20px #fff, 0 0 42px #0fa, 0 0 82px rgb(207, 44, 199),0 0 92px rgb(179, 255, 0);
 }
-.review-form{
+#review-container{
   margin-left: 1000px;
   margin-top: -50px;
   margin-right: 30px;
 
+}
+#review-message, #questions {
+  background-color:rgb(182, 154, 158);
+  opacity: 80%;
+  color:rgb(27, 25, 25);
+}
+#review-message{
+  margin-right: 100px;
+}
+#meals-menu {
+  background-color: gray;
+  padding-bottom: 15px;
+}
+#meal-menu{
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  border: solid;
+  border-color: black;
 }
   
 input,
@@ -98,7 +134,7 @@ textarea {
   width: 90%;
 }
 #submitBttn {
-  font-size: 30px;
+  font-size: 20px;
 }
 .name {
   font-size: 2rem;
@@ -109,17 +145,6 @@ textarea {
   margin-right: 500px;
 }
 
-#review-message{
-  font-size: 20px;
-  color: white;
-  text-align: center;
-}
-
-#questions {
-  color: white;
-  background-color: black;
-  
-}
 #review-content {
   height: 70px;
 }
