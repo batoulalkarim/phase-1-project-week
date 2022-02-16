@@ -6,22 +6,52 @@
         <script defer type="text/javascript" src="index.js"></script>
     </head>
     <body>
+        <div class ="container" >
+        <div class = "bg image1">
         <header>
-            <h3>FLAVOR ZONE</h3>
+            <h3>WELCOME TO THE FLAVOR ZONE</h3>
         </header>
-        <div id="meals-menu">
+        
+        <h4 id = "intro">Batoul and Will's <br> <strong>Top</strong> Recipes<br><br><em>Try them, then <strong>rate</strong> them out of five fieri heads!</em></h4>
+        
+        <img class ="fiery-head" src="images/452-4520571_guy-fieri-head-png-transparent-png.png">
+        
+    </div>
+        <div class = "bg image2">
 
+        <div id="meals-menu">
+           
         </div>
+
         <!--When you click on an image-->
+
         <div id='meal-details'>
             <img id="selectedPic" src="images/will-cheese.png">
-            <h2 class ="name">Meal Name Here</h2>
+            <h2 class ="name">Chopped Cheese</h2>
             
         </div>
+        <div id="review-container">
+            <h4 id="review-message">Leave a review of the food you tried!</h4>
+            <form class="review-form">
+                
+
+                <label for="review" id="questions"><strong>Which one did you try? And what did you think?</strong></label>
+               
+                <input type = 'text' style="font-size:20px" id="review-content">
+                
+
+                <input type= "submit" value="Submit Review" id="submitBttn" />
+
+
+                 <!--I think we can put the five heads review here-->
+            </form>
+        </div>
+    </div>
+    </div>
     </body>
 </html>
 
 
 
-//form.reset() will make it so when you submit a review of food
-//the text from the previous comment will go away
+<!-- <-- form.reset() will make it so when you submit a review of food
+the text from the previous comment will go away --> 
